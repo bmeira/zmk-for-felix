@@ -18,7 +18,6 @@
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
 As such, those are in use within the default layer at this time.*/
 
-
 / {
     behaviors {
         tpmt: tpmt {
@@ -46,11 +45,11 @@ As such, those are in use within the default layer at this time.*/
             // | ADJUST |  ESC   |  ALT   |  LGUI  | EISUU  | LOWER  | SPACE  |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp ESC        &kp N1         &kp N2            &kp N3            &kp N4              &kp N5                     &kp N6     &kp N7               &kp N8        &kp N9             &kp N0                         &kp MINUS
-&kp TAB        &kp Q          &kp W             &kp E             &kp R               &kp T                      &kp Y      &kp U                &kp I         &kp O              &kp P                          &kp BACKSPACE
-&kp BACKSPACE  &tpmt LCTRL A  &tpmt LEFT_ALT S  &tpmt LEFT_GUI D  &tpmt LEFT_SHIFT F  &kp G                      &kp H      &tpmt RIGHT_SHIFT J  &tpmt RGUI K  &tpmt RIGHT_ALT L  &tpmt RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z          &kp X             &kp C             &kp V               &kp B      &mo 3    &mo 2  &kp N      &kp M                &kp COMMA     &kp PERIOD         &kp SLASH                      &kp RIGHT_SHIFT
-&kp LCTRL      &kp LEFT_META  &kp LALT          &kp SPACE        &kp ENTER           &mo LOWER  &mo 2    &mo 1  &kp SPACE  &kp DEL              &kp LEFT      &kp DOWN           &kp UP                         &kp RIGHT
+&kp ESC    &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                                       &kp N6     &kp N7   &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q          &kp W     &kp E      &kp R      &kp T                                        &kp Y      &kp U    &kp I      &kp O       &kp P          &kp BACKSPACE
+&kp CAPS   &kp A          &kp S     &kp D      &kp F      &kp G                                        &kp H      &kp J    &kp K      &kp L       &kp SEMICOLON  &kp ENTER
+&kp LSHFT  &kp Z          &kp X     &kp C      &kp V      &kp B      &kp PAGE_UP        &kp PAGE_DOWN  &kp N      &kp M    &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_SHIFT
+&kp LCTRL  &kp LEFT_META  &kp LALT  &kp SPACE  &kp ENTER  &kp SPACE  &kp HOME           &kp END        &kp SPACE  &kp DEL  &kp LEFT   &kp DOWN    &kp UP         &kp RIGHT
             >;
 
             label = "DEFAULT";
@@ -65,11 +64,11 @@ As such, those are in use within the default layer at this time.*/
             // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
 
             bindings = <
-&kp F1  &kp F2     &kp F3  &kp F4  &kp F5           &kp F6                    &kp F7      &kp F8          &kp F9            &kp F10            &kp F11        &kp F12
-&trans  &kp GRAVE  &trans  &trans  &kp PRINTSCREEN  &trans                    &kp INS     &kp HOME        &kp UP_ARROW      &kp END            &kp PG_UP      &trans
-&trans  &trans     &trans  &trans  &trans           &trans                    &kp DELETE  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW    &kp PAGE_DOWN  &kp LEFT_GUI
-&trans  &trans     &trans  &trans  &trans           &trans  &trans    &trans  &kp MINUS   &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
-&trans  &trans     &trans  &trans  &trans           &trans  &trans    &trans  &trans      &kp SPACE           &trans            &trans             &trans         &trans
+&kp F1  &kp F2     &kp F3  &kp F4  &kp F5           &kp F6                        &kp F7      &kp F8          &kp F9            &kp F10            &kp F11        &kp F12
+&trans  &kp GRAVE  &trans  &trans  &kp PRINTSCREEN  &trans                        &kp INS     &kp HOME        &kp UP_ARROW      &kp END            &kp PG_UP      &trans
+&trans  &trans     &trans  &trans  &trans           &trans                        &kp DELETE  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW    &kp PAGE_DOWN  &kp LEFT_GUI
+&trans  &trans     &trans  &trans  &trans           &trans  &trans        &trans  &kp MINUS   &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
+&trans  &trans     &trans  &trans  &trans           &trans  &trans        &trans  &trans      &kp SPACE       &trans            &trans             &trans         &trans
             >;
 
             label = "NAV";
@@ -84,11 +83,11 @@ As such, those are in use within the default layer at this time.*/
             // |       |       |       |       |       |       |       |                    |       |       |       | NEXT  | VOL-  | VOL+  | PLAY  |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans         &trans        &kp N8        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP      &kp N7        &kp N8        &kp N9        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp PAGE_DOWN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N0         &kp KP_DOT    &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans         &trans        &kp N8        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &kp PG_UP      &kp N7        &kp N8        &kp N9        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &kp PAGE_DOWN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &kp N0         &kp KP_DOT    &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
             >;
 
             label = "NUM";
@@ -103,30 +102,22 @@ As such, those are in use within the default layer at this time.*/
             // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
 
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK  &trans  &studio_unlock  &out OUT_TOG
-&trans       &trans        &trans        &trans        &trans        &trans                          &none         &none           &none           &none   &none           &none
-&trans       &trans        &trans        &trans        &trans        &trans                          &none         &none           &none           &none   &none           &trans
-&bootloader  &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans          &trans          &trans  &trans          &bootloader
-&trans       &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans          &trans          &trans  &trans          &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK  &trans  &studio_unlock  &out OUT_TOG
+&trans       &trans        &trans        &trans        &trans        &trans                              &none         &none           &none           &none   &none           &none
+&trans       &trans        &trans        &trans        &trans        &trans                              &none         &none           &none           &none   &none           &trans
+&bootloader  &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans        &trans          &trans          &trans  &trans          &bootloader
+&trans       &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans        &trans          &trans          &trans  &trans          &trans
             >;
 
             label = "SYS";
         };
 
-        extra1 {
-            status = "reserved";
-        };
+        extra1 { status = "reserved"; };
 
-        extra2 {
-            status = "reserved";
-        };
+        extra2 { status = "reserved"; };
 
-        extra3 {
-            status = "reserved";
-        };
+        extra3 { status = "reserved"; };
 
-        extra4 {
-            status = "reserved";
-        };
+        extra4 { status = "reserved"; };
     };
 };
