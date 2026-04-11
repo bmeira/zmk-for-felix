@@ -1,70 +1,7 @@
 layout: {zmk_keyboard: felix}
 layers:
-  DEFAULT:
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '-'
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BACKSPACE
-  - BACKSPACE
-  - {t: A, h: LCTRL}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT GUI}
-  - {t: F, h: LEFT SHIFT}
-  - G
-  - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RGUI}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RIGHT CONTROL}
-  - ''''
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - SYS
-  - NUM
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - RIGHT SHIFT
-  - LCTRL
-  - LEFT META
-  - LALT
-  - SPACE
-  - ENTER
-  - NAV
-  - NUM
-  - NAV
-  - SPACE
-  - DEL
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  DEFAULT: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, CAPS, A, S, D, F, G, H, J, K, L, ;, ENTER, LSHFT,
+    Z, X, C, V, B, PAGE UP, PAGE DOWN, N, M, ',', ., /, RIGHT SHIFT, LCTRL, LEFT META, LALT, SPACE, ENTER, SPACE, HOME, END, SPACE, DEL, LEFT, DOWN, UP, RIGHT]
   NAV:
   - F1
   - F2
@@ -121,7 +58,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -174,7 +111,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -238,7 +175,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
