@@ -57,8 +57,8 @@ layers:
   - ''
   - {t: SPACE, h: conn}
   - {t: SPACE, h: func}
-  - ''
-  - ''
+  - {t: SPACE, h: func}
+  - {t: ENTER, h: func}
   - {t: ENTER, h: func}
   - {t: ENTER, h: conn}
   - {t: game, h: toggle}
